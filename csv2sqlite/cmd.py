@@ -1,5 +1,7 @@
 import argparse
 
+from csv2sqlite.utils import parse_csv
+
 parser = argparse.ArgumentParser(
     description='CLI application that reads and saves a CSV file to a SQLite database.')
 parser.add_argument(
@@ -17,3 +19,7 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
+if args.delimiter is None:
+    file_iterator = parse_csv(args.csvfile, args.rows)
+else:
+    file_iterator = parse_csv(args.csvfile, args.rows, args.delimiter)

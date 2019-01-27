@@ -15,7 +15,9 @@ setup(
     long_description_content_type='text/markdown',
     author='Miguel Algorri',
     author_email='algorrim@gmail.com',
-    install_requires=[],
+    install_requires=[
+        'pandas>=0.24.0'
+    ],
     extras_require={
         'test': [],
     },
