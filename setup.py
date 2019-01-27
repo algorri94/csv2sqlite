@@ -16,14 +16,15 @@ setup(
     author='Miguel Algorri',
     author_email='algorrim@gmail.com',
     install_requires=[
-        'pandas>=0.24.0'
+        'pandas>=0.24.0',
+        'SQLAlchemy>=1.2.17'
     ],
-    extras_require={
-        'test': [],
-    },
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'csv2sqlite=csv2sqlite.cmd'
+            'csv2sqlite=csv2sqlite.cmd:main'
         ]
-    }
+    },
+    url='https://github.com/algorri94/csv2sqlite'
 )
