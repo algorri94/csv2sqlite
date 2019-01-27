@@ -30,4 +30,4 @@ Optional arguments:
   
 &nbsp;&nbsp;&nbsp; --delimiter DELIMITER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Character that separates the different fields in the CSV. Default ','
 
-&nbsp;&nbsp;&nbsp; --database DATABASE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQLite database file location. Default '/db/csv2sqlite.db'
+&nbsp;&nbsp;&nbsp; --database DATABASE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SQLite database file location. Default '/csv2sqlite.db'
